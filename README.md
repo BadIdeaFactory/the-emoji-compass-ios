@@ -1,44 +1,21 @@
-# BIFFUD iOS Virus
+# The Emoji Compass (iOS)
 
-This very appropriately named project is a generic iOS wrapper (bacteriphage) capable of injecting HTML (RNA) into your iOS device (host cell).
+This application is built using the [BIFFUD iOS Virus](https://github.com/BadIdeaFactory/biffud-ios-virus).  It contains the contents of [The Emoji Compass](https://github.com/BadIdeaFactory/the-emoji-compass)
 
-Here is an architecture diagram.
+## Setting up
 
-![architecture](https://user-images.githubusercontent.com/208884/66493299-ce0bb580-ea83-11e9-9489-d394b0622bbf.png)
+After cloning this repository:
 
-## Application types
+> $ > git submodule update --init --recursive
 
-There are two types of web application that can be wrapped using this tool:
+## Building the static site
 
-1. A hosted website (e.g. just rendering a url on the internet).
-2. A static / local website (e.g. there is no server component).
+This application hosts a local / static version of The Emoji Compass.  In order to build it you will need to follow these instructions to clone that static version to the right location:
 
-## Instructions
+> $ > cd the-emoji-compass
 
-Regardless of what type of site you are packaging into your application there are some common steps:
+Follow [the build instructions](https://github.com/BadIdeaFactory/the-emoji-compass#build-instructions)
 
-1. Fork / clone this repository
-2. Update the `AppIcon.appiconset` to your app icon
-3. If this is not a [BIFFUD](https://biffud.com) project, update `BIF Logo.imageset` with your loading informaton.
+After build completes go back to the project root and copy the compiled compass files:
 
-Instructions shift slightly from here:
-
-### Pathway A: Static site
-
-To create a new iOS application that renders a static / local web appplication, do the following:
-
-1. Replace the content of `iOSVirus/Website` with your website's assets.
-2. Build and publish.
-
-Note: `index.html` is the entry point.
-
-### Pathway B: Hosted site
-To create a new iOS application that renders a hosted website (e.g. a url), do the following:
-
-1. Update `iOSVirus/Views/WebViewController.swift` by commenting L23-L25 (the lines specifying the local paths)
-2. In that same file, uncomment L15-L17 (the lines specifying the remote url)
-3. Update `appUrl` to be whatever you are trying to host.
-
-## Other Notes
-
-If you use this project please consider giving a shout out to Bad Idea Factory.
+> $ > cp the-emoji-compass/build/* iOSVirus/Website
