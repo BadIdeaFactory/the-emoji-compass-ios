@@ -1,0 +1,3 @@
+[submodule "the-emoji-compass"]
+	path = the-emoji-compass
+	url = git@github.com:BadIdeaFactory/the-emoji-compass.git
