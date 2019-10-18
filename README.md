@@ -18,4 +18,4 @@ Follow [the build instructions](https://github.com/BadIdeaFactory/the-emoji-comp
 
 After build completes go back to the project root and copy the compiled compass files:
 
-> $ > cp the-emoji-compass/build/* iOSVirus/Website
+> $ > cp -r the-emoji-compass/build/* iOSVirus/Website
