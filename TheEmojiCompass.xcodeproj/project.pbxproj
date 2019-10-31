@@ -60,7 +60,7 @@
 		D0A2DF8E21C986FC0064D61F = {
 			isa = PBXGroup;
 			children = (
-				D0A2DF9921C986FC0064D61F /* iOSVirus */,
+				D0A2DF9921C986FC0064D61F /* TheEmojiCompass */,
 				D0A2DF9821C986FC0064D61F /* Products */,
 				D0BAD23F234E229D00BA3475 /* Frameworks */,
 			);
@@ -74,7 +74,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0A2DF9921C986FC0064D61F /* iOSVirus */ = {
+		D0A2DF9921C986FC0064D61F /* TheEmojiCompass */ = {
 			isa = PBXGroup;
 			children = (
 				D0EB5583235A0AA100906B60 /* Website */,
@@ -87,7 +87,7 @@
 				D0A2DFA621C986FD0064D61F /* Info.plist */,
 				D0190F7921C9A38C00AF205B /* RandomColor.swift */,
 			);
-			path = iOSVirus;
+			path = TheEmojiCompass;
 			sourceTree = "<group>";
 		};
 		D0A2DFAE21C98FB20064D61F /* Views */ = {
@@ -335,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.iOSVirus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.TheEmojiCompass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.iOSVirus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.TheEmojiCompass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
